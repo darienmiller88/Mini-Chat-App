@@ -1,0 +1,39 @@
+body{
+    background-image: url(../img/background.jpeg);
+}
+
+.title{
+    text-align: center;
+}
+
+.chat-box{
+    border: 2px solid black;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+
+    overflow-y: scroll;
+}
+
+.message{
+    background-color: aqua;
+    width: fit-content;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+.input-wrapper{
+    display: grid;
+    grid-template-columns: 85% auto;
+    margin: auto;
+
+    font-size: 25px;
+    text-align: center;
+    width: 50vw;
+}
+
+.input-wrapper input{
+    font-size: 25px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/chat.css"/>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 class="title">Chat App!</h1>
+        <div class="chat-box">
+            <div class="message">
+                Hi vicky
+            </div>
+            <div class="message">
+                Hi Darien
+            </div>
+        </div>
+        <form class="input-wrapper" hx-post="/" hx-swap="none" hx-on::after-request="this.reset()">
+            <input placeholder="Send Message" name="message_content" type="text"/>
+            <button>
+                Send
+            </button>
+        </form>
+
+        <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+        <script src="../static/js/chat.js"></script>
+    </body>
+</html>
